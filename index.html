@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angle Calculator</title>
+    <title>Triangle Angle Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Calculate Angle</h1>
-    <div>
-        <label for="vertical">Vertical Distance (meters):</label>
-        <input type="number" id="vertical" step="0.01">
-    </div>
-    <div>
-        <label for="horizontal">Horizontal Distance (meters):</label>
-        <input type="number" id="horizontal" step="0.01">
-    </div>
-    <button onclick="calculateAndDisplayAngle()">Calculate Angle</button>
-    <p id="result"></p>
+    <h1>Triangle Angle Calculator</h1>
+    <form id="triangleForm">
+        <label>Direct Distance (meters):
+            <input type="number" id="direct" required>
+        </label><br>
+        <label>Horizontal Distance (meters):
+            <input type="number" id="horizontal" required>
+        </label><br>
+        <label>Vertical Distance (meters):
+            <input type="number" id="vertical" required>
+        </label><br>
+        <button type="button" onclick="calculateAngles()">Calculate Angles</button>
+    </form>
+    <div id="results"></div>
 
-    <script src="script.js"></script>
+    <script src="calculateAngles.js"></script>
 </body>
 </html>
