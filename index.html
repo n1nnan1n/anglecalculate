@@ -22,8 +22,8 @@
         }
         #triangleCanvas {
             border: 1px solid #000;
-            width: 500px;
-            height: 300px;
+            width: 300px;
+            height: 200px;
         }
         form {
             margin-bottom: 30px;
@@ -106,7 +106,7 @@
 
             // Calculate the coordinates of the triangle
             const x0 = 50;
-            const y0 = canvas.height - 20;
+            const y0 = canvas.height - 50;
             const x1 = x0 + horizontal * scale;
             const y1 = y0;
             const x2 = x0;
@@ -125,7 +125,7 @@
 
             // Display angles
             ctx.fillStyle = '#ff0000';
-            ctx.font = '9px Arial';
+            ctx.font = '11px Arial';
             ctx.fillText(`A : ${angles.angleA}°`, x2+5, y2-5); // Angle A
             ctx.fillText(`B : ${angles.angleB}°`, x1+5, y1); // Angle B
             ctx.fillText(`C : ${angles.angleC}°`, x0-10, y0+12); // Angle C
